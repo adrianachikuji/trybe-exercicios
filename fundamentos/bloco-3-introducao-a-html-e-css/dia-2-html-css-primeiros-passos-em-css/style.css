@@ -1,0 +1,25 @@
+h1{
+    color:orange;
+    font-size: 65px;
+    font-family: sans-serif;   
+    }
+    ul {
+        background-color: pink;
+    }
+    p {
+        background-color: blue;
+        font-weight: 600;
+        font: size 3em;
+    }
+    body {
+        font-size:16px;
+    }
+    .amarelo{
+        background-color: yellow;
+    }
+    .vermelho{
+    background-color: red;
+    }
+    .marrom{
+        background-color:brown;
+    }
