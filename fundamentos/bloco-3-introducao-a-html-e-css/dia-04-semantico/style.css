@@ -1,7 +1,24 @@
 body{
     background-color:#caf0f8 ;
+    font-family: Arial, Helvetica, sans-serif;
 }
 #imag{
    width: 300px; 
    height: 300px;
 }
+ .nav-links li{
+ display: inline-block;
+ width: 200px;
+ }
+ h4{
+    color: #03045e;
+ }
+ h3{
+    color: #002855 ;
+ }
+ h2{
+    color:#3c096c;
+ }
+ h1{
+    color: #006ba6;
+ }
