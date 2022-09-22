@@ -13,12 +13,41 @@
  console.log('divisão: '+ (a/b));
  console.log('modulo:' + (a%b));
 
+ const c = 30;
+ const d = 25;
+
+ if (c > d){
+    console.log("'c' é maior que 'd'");
+ }
+else if (d > c) {
+    console.log("'d' é maior que 'c'");
+};
+
+
+if (a > b && a > c){
+    console.log('O maior é: ' + a + '(a)');
+}
+else if (b > a && b > c){
+   console.log('O maior é: ' + b + '(b)');
+}
+else {
+    console.log('O maior é: ' + c + '(c)');
+}
  
+const trianguloA = 1;
+const trianguloB = 1;
+const trianguloC = 1;
 
+function verificaSeETriangulo(a, b, c) {
+    if (trianguloA === trianguloB && trianguloA === trianguloC) {
+        return true;
+    }
+    else {
+        return false;
+    }
+    
+}
 
- 
-
- 
-
+console.log(verificaSeETriangulo(trianguloA, trianguloB, trianguloC))
 
 
