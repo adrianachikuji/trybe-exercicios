@@ -1,5 +1,24 @@
- const myName = adriana;
+ const myName = 'adriana';
  const birthCity = 'São Paulo';
- let birthYear =1994;
+ let birthYear = 1994;
 
- console.log(myName,birthCity,birthYear)
+ console.log(myName,birthCity,birthYear);
+
+ const a = 10;
+ const b = 15;
+
+ console.log('soma: ' + (a+b));
+ console.log('subtração: ' + (a-b));
+ console.log('multiplicação: ' + (a*b));
+ console.log('divisão: '+ (a/b));
+ console.log('modulo:' + (a%b));
+
+ 
+
+
+ 
+
+ 
+
+
+
