@@ -36,4 +36,21 @@ let info2= {
   } else{
     console.log('Ambos não recorrentes')
   }
+  //______________________________________________________________________________________
+  let leitor = {
+    nome: 'Julia',
+    sobrenome: 'Pessoa',
+    idade: 21,
+    livrosFavoritos: [
+      {
+        titulo: 'O Pior Dia de Todos',
+        autor: 'Daniela Kopsch',
+        editora: 'Tordesilhas',
+      },
+    ],
+  };
+  //_________________________________________________________________________________________
+  for (let i = 0; i < 10; i += 1) {
+    console.log(i);
+  }
   
