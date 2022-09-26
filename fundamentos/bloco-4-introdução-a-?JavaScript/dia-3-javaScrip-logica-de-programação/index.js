@@ -3,7 +3,7 @@ let fruits = [3, 4, 10, 1, 12];
 let sum = 0;
 
 for (let index = 0; index < fruits.length; index += 1) {
-  sum += fruits[index];
+  sum += fruits[index];git 
 }
 
 if (sum > 15) {
@@ -20,4 +20,8 @@ for (let index = 0; index <= n; index += 1) {
 };
 console.log(resultado);
 
-
+function greetingsMessage(name) {
+ console.log("Boas vindas, " + name);
+  }
+  
+  
