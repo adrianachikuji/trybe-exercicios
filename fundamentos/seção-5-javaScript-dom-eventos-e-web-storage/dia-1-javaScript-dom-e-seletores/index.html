@@ -36,12 +36,24 @@
     </header>    
     <main class="main-content">
       <section class="center-content">
-        <p>Texto padrão do nosso site</p>
+        <p id="paragraph">Texto padrão do nosso site</p>
         <p>-----</p>
         <p>Trybe</p>
       </section>
     </main>
     <script>
+        const paragraph = document.getElementById('paragraph');
+        paragraph.innerText = 'Daqui a dois anos quero estar em um bom trabalho e bem remunerada';
+        
+        const blocoAmarelo = document.getElementsByClassName('main-content')[0];
+        blocoAmarelo.style.backgroundColor = 'green';
+        
+        const blocovermelho = document.getElementsByClassName('center-content')[0];
+        blocovermelho.style.backgroundColor = 'white';
+        
+        const titulo = document.getElementsByClassName('title')[0];
+        titulo.innerText = 'Exercício - JavaScript'; 
+        
         /*
       Aqui você vai modificar os elementos já existentes utilizando apenas as funções:
       - document.getElementById()
