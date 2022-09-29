@@ -56,11 +56,55 @@
     </style>
   </head>
   <body>
-    <script>
-     const parth1 = document.createElement(h1);
-     parth1.innetText = 'Exercício - JavaScript DOM';
-     parth1.body,appendChild(parth1);
+    <script> 
+    const parth1 = document.createElement('h1');
+     parth1.innerText = 'Exercício - JavaScript DOM';
+     document.body.appendChild(parth1);
 
+     const parthMain = document.createElement('main');
+     parthMain.className = 'main-content';
+     document.body.appendChild(parthMain);
+
+     const partSectionCenter = document.createElement('section');
+     partSectionCenter.className = 'center-content';
+     parthMain.appendChild(partSectionCenter);
+    
+     const paragrafo = document.createElement('p');
+     paragrafo.innerHTML = 'Quem não tem teto de vidro que atire a primeira pedra';
+     partSectionCenter.appendChild(paragrafo);
+
+     const parthLeftContent = document.createElement('section');
+     parthLeftContent.className = 'left-content';
+     parthMain.appendChild(parthLeftContent);
+
+     const parthRightContent = document.createElement('section');
+     parthRightContent.className = 'right-content';
+     parthMain.appendChild(parthRightContent);
+
+     const parthImag = document.createElement('img');
+     parthImag.className = 'small-image';
+     parthImag.src = 'https://picsum.photos/200';
+     partSectionCenter.appendChild(parthImag);
+
+     const parthUl = document.createElement('ul');
+     partSectionCenter.appendChild(parthUl);
+
+     const arrayNumeros = ['Um', 'Dois', 'Três', 'Quatro', 'Cinco', 'Seis',
+        'Sete', 'Oito', 'Nove', 'Dez'];
+        for (let num in arrayNumeros) {
+            const parthLi = document.createElement('li');
+            parthLi.innerHTML = arrayNumeros[num];
+            parthUl.appendChild(parthLi);
+        }
+        for( index = 1; index <= 3; index += 1){
+            const partH3 = document.createElement('h3');
+            partH3.innerHTML = 'vidro' + index;
+            parthMain.appendChild(partH3);
+        }
+
+
+        
+        
     </script>
   </body>
 </html>
