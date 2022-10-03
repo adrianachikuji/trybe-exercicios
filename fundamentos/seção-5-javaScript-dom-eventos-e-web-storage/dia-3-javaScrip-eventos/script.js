@@ -20,24 +20,24 @@ function createDaysOfTheWeek() {
 
     for (let index = 0; index < decemberDaysList; index += 1){
         let day = decemberDaysList[index];
-        let dayListItem = document.createElement('li');
-        dayListItem.innerHTML = day;
+        let itemDay = document.createElement('li');
+        itemDay.innerHTML = day;
 
         if (day === 24 || day === 31){
             itemDay.className = 'Feriado';
-            listDays.appendChild(dayListItem);
+            listDays.appendChild(itemDay);
 
         } else if ( day === 4 || day === 11 || day === 18){
             itemDay.className = 'Sexta-feira';
-            listDays.appendChild(dayListItem);
+            listDays.appendChild(itemDay);
 
         } else if (day === 25){
             itemDay.className = 'feriado na Sexta feira';
-            listDays.appendChild(dayListItem);
+            listDays.appendChild(itemDay);
         } else {
-            dayListItem.className ='dia'
-            listDays.appendChild(dayListItem);
+            itemDay.className ='dia'
+            listDays.appendChild(itemDay);
         }
     }
   }
-  daysMonth();
+  daysMonth()
