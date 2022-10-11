@@ -10,26 +10,36 @@
   }
   
   .header-container {
+    border: 2px solid black;
     background-color: #5C687C;
     display: flex;
   }
   
   .logo-container {
+    border: 2px solid green;
     display: flex;
     justify-content: center;
+    flex-basis: 268px;
   }
   
   .menu-container {
+    border: 2px solid pink;
     display: flex;
+    flex-basis: 100%;
+    order: 1;
+    justify-content: space-around;
   }
   
   .menu-container ul {
+    border: 2px solid red;
     display: flex;
     justify-content: space-around;
     width: 100%;
+    align-self: center;
   }
   
   .menu-container li {
+    border: 2px solid black;
     color: white;
     font-weight: 500;
     font-size: 1.3rem;
@@ -38,27 +48,33 @@
   }
 
   .main-container {
+    border: 2px solid purple;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    /* align-items: stretch; */
   }
   
   .movie-container {
+    border: 2px solid black;
     display: flex;
     flex-direction: column;
   }
   
   .movie-container h2 {
+    border: 2px solid red;
     margin: 40px 0;
     text-align: center;
   }
   
   .card-container {
+    border: 2px solid yellow;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
   }
   
   .card-container div {
+    border: 2px solid rebeccapurple;
     align-items: center;
     background-color: #5C687C;
     border: black solid 1px;
@@ -69,9 +85,13 @@
   }
   
   .aside-container {
+    border: 2px solid red;
     display: flex;
     flex-direction: column;
     margin: 20px;
+    /* width: 350px; */
+    flex-wrap: wrap;
+    justify-content:center;
   }
   
   .aside-container h3, h4 {
