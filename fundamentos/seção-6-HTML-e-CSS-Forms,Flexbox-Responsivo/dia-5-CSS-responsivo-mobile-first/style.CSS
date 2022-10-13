@@ -19,11 +19,11 @@
   }
   
   h1 {
-  
+  font-size: 50px;
   }
   
   h2 {
-  
+  font-size: 40px;
   }
   
   img {
@@ -39,9 +39,9 @@
   }
   
   figure {
-      margin: 0;
+      margin: 10px;
   }
   
   figcaption {
-    font-size: .8em;
+    font-size: ;
   }
