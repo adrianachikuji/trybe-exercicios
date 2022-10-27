@@ -9,14 +9,14 @@ const names = [
   function containsA() {
     let totalLetrasA = 0;
     names.forEach((name) => {
-    const letrasNomes = name.split('');
-     totalLetrasA += letrasNomes.reduce ((letrasA, letraAtual) =>{
-     if (letraAtual === 'a' || letrasA === 'A'){
-     return  letrasA + 1;
-     }
-     return letrasA;
-    }, 0);
-  });
-  return totalLetrasA;
+        const letrasNomes = name.split('');
+        totalLetrasA += letrasNomes.reduce((letrasA, letraAtual) =>{
+        if (letraAtual.toLowerCase() === 'a'){
+            return  letrasA + 1;
+        }
+        return letrasA;
+        }, 0);
+    });
+    return totalLetrasA;
 }
-console.log(containsA);
+console.log(containsA());
